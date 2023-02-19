@@ -1,5 +1,5 @@
 # Background patch for rio
-This is a patch for the [rio](https://en.wikipedia.org/wiki/Rio_(windowing_system)) windowing system. It's based on [the mod created by 100rabits](https://wiki.xxiivv.com/site/rio.html), with a modification that allows for user specific background images.
+This is a patch for the [rio](https://en.wikipedia.org/wiki/Rio_(windowing_system)) windowing system that allows for the usage of custom background images. It's based on [the mod created by 100rabits](https://wiki.xxiivv.com/site/rio.html), with a modification that allows for user specific background images.
 
 # Installation
 Since [data.c](./data.c) is the only file that needs to be modified by the patch, you just need to copy this repository's version of that file into the `/sys/src/cmd/rio` directory on your Plan9/9front installation. Alternatively, you can modify the `iconinit(void)` function near the end of `/sys/src/cmd/rio/data.c` to include the following modifications. 
